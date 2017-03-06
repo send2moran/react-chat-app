@@ -1,0 +1,99 @@
+.chat-room-container{
+  position: relative;
+}
+.chat-room-log{
+  height:230px;
+  overflow: scroll;
+  margin-top:5px;
+}
+.chat-room-textbox{
+  position: fixed;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  width:100%;
+  height: 50px;
+  margin:auto;
+  padding: 10px 10px;
+}
+.chat-room-send-button{
+  position: fixed;
+  bottom:0px;
+  right:0px;
+  width:20%;
+  height: 72px;
+  border: 1px solid grey;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
+  background: rgb(238,238,238); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+}
+.chat-bubble-wrap{
+  margin:10px;
+  width: 50%;
+  font-size:13px;
+  font-family: arial;
+}
+.chat-bubble{
+  margin: 10px 5px 5px 0px;
+  clear:both;
+  display: block;
+  border-radius: 5px;
+  border:0px solid #b9ffab;
+  width: 100%;
+  background-color: #b9ffab;
+  -webkit-animation:pop-in 0.2s;
+  -moz-animation:pop-in 0.2s;
+  -ms-animation:pop-in 0.2s;
+  position: relative;
+  line-height: 20px;
+}
+.chat-bubble:after {
+   content: "";
+   position: absolute;
+   bottom: 100%;
+   left: 10px;
+   border-top: 5px solid black;
+   border-top-color: inherit;
+   border-left: 5px solid transparent;
+   border-right: 5px solid transparent;
+   transform: rotate(-180deg);
+   -ms-transform: rotate(-180deg); /* IE 9 */
+   -webkit-transform: rotate(-180deg); /* Chrome, Safari, Opera */
+}
+.chat-bubble-date{
+  font-size:11px;
+  color:grey;
+  text-align: right;
+  display: block;
+}
+.chat-bubble-text{
+  padding:10px;
+  display: inline-block;
+}
+
+
+
+@keyframes pop-in {
+  0% { opacity: 0;transform: scale(0.1); }
+  100% { opacity: 1;transform: scale(1); }
+}
+@-webkit-keyframes pop-in {
+  0% { opacity: 0;-webkit-transform: scale(0.1); }
+  100% { opacity: 1;-webkit-transform: scale(1); }
+}
+@-moz-keyframes pop-in {
+  0% { opacity: 0;-moz-transform: scale(0.1); }
+  100% { opacity: 1;-moz-transform: scale(1); }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Yield Home Work</title>
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+  <img class="logo" src="http://www.dynamicyield.com/wp-content/uploads/2014/12/DY-Logo.png"/>
+  <div id="chat-app-container">
+    <span class="loading">Loading...</span>
+  </div>
+
+  <script type="text/javascript" src="../node_modules/react/dist/react.js"></script>
+  <script type="text/javascript" src="../node_modules/react/dist/JSXTransformer.js"></script>
+
+
+  <!--
+
+  NOTE !
+
+  JSXTransformer tries to load the source using ajax. This will not work for file:// paths.
+
+  Chrome doesn't let you load file:// urls via XHR (which as mentioned elsewhere is how the in browser transform works). You have a couple options:
+
+  * Use a different browser. I know Firefox works.
+  * Start a local web server (Python ships with one, so if you have that installed it's very simple - http://www.linuxjournal.com/content/tech-tip-really-simple-http-server-python).
+  * Put the script inline instead of in a separate file. That's doable for something simple like this but you'll want to try one of the other options as your code gets more complicated.
+
+  -->
+
+
+  <script type="text/javascript" src="js/react-draggable.min.js"></script>
+  <script type="text/jsx" src="components/chat-frame.js"></script>
+  <script type="text/jsx" src="components/chat-container.js"></script>
+  <script type="text/jsx" src="components/add-button.js"></script>
+  <script type="text/jsx" src="components/app.js"></script>
+  <script type="text/jsx" src="components/app-container.js"></script>
+  <script type="text/jsx" src="js/index.js"></script>
+</body>
+</html>

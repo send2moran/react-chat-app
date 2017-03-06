@@ -1,0 +1,15 @@
+{
+  "name": "dy-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "npm run http"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.13.3",
+    "react-draggable": "^0.8.1"
+  }
+}
